@@ -44,3 +44,25 @@ nextTurn.addEventListener('click', (e) => {
     turn++;
     turnSpan.innerText = turn;
 });
+
+document.addEventListener('keypress', (e) => {
+    switch (e.key) {
+        case "q":
+            removeEnergy.focus();
+            removeEnergy.click();
+            break;
+        case "w":
+            addEnergy.focus();
+            addEnergy.click();
+            break;
+        case " ":
+            nextTurn.focus();
+            nextTurn.click();
+            break;
+        case "r":
+            startMatch.focus();
+            startMatch.click();
+            break;
+
+    }
+})
